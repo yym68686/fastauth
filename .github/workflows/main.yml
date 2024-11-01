@@ -7,15 +7,12 @@ on:
     paths:
       - VERSION
       - main.py
-      - utils.py
-      - models.py
-      - request.py
       - Dockerfile
-      - response.py
       - .dockerignore
       - requirements.txt
       - docker-compose.yml
       - .github/workflows/main.yml
+    workflow_run:
 
 jobs:
   build-and-push:
@@ -79,7 +76,7 @@ jobs:
         platforms: linux/amd64,linux/arm64
         push: true
         tags: |
-          yym68686/uni-api:latest
-          yym68686/uni-api:${{ steps.bump_version.outputs.new_version }}
+          yym68686/fastauth:latest
+          yym68686/fastauth:${{ steps.bump_version.outputs.new_version }}
           ghcr.io/${{ github.repository }}:latest
           ghcr.io/${{ github.repository }}:${{ steps.bump_version.outputs.new_version }}
