@@ -1,0 +1,12 @@
+xue
+PyJWT
+pytest
+fastapi
+uvicorn
+passlib
+aiosqlite
+sqlalchemy
+watchfiles
+cryptography
+pydantic[email]
+python-multipart

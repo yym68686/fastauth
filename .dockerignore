@@ -1,0 +1,13 @@
+api.yaml
+test
+data
+json_str
+*.jpg
+*.json
+*.png
+*.db
+*.bash
+*.sh
+.vscode
+.env
+fastauth_db

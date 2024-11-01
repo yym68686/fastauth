@@ -1,0 +1,8 @@
+services:
+  fastauth:
+    container_name: fastauth
+    image: yym68686/fastauth:latest
+    ports:
+      - 8002:8000
+    volumes:
+      - ./fastauth_db:/home/data
